@@ -31,6 +31,9 @@ public class AddressBookSystemMain {
                 default:
                     choice = 0;
             }
+
         }
+        System.out.println("");
     }
+
 }
