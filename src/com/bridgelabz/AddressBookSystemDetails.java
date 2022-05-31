@@ -88,6 +88,19 @@ public class AddressBookSystemDetails
         }
     }
 
+    // This method is used to delete the contact details
+    public void deleteDetails() {
+        System.out.println("Confirm first name to delete contact details");
+        String confirmName = scanner.next();
+        for (int i = 0; i < personDetails.size(); i++) {
+
+            if (personDetails.get(i).getFirstName().equals(confirmName)) {
+                personDetails.remove(i);
+            } else {
+                System.out.println("Enter valid first name");
+            }
+        }
+    }
 
     // This method is used to display the added information
     public void display() {
