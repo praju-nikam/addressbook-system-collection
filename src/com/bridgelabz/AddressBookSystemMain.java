@@ -13,7 +13,7 @@ public class AddressBookSystemMain {
         int choice = 1;
         while (choice == 1){
             System.out.println("Choose One of the Given Choices as per Requirement: ");
-            System.out.println("1.Add Details\n2.Edit Details\n3.Delete Details\n4.Display Details\n0.Exit");
+            System.out.println("1.Add Details\n 2.Edit Details\n 3.Delete Details\n 4.Display Details\n 0.Exit");
 
             switch (scanner.nextInt()){
                 case 1:
@@ -31,6 +31,9 @@ public class AddressBookSystemMain {
                 default:
                     choice = 0;
             }
+
         }
+        System.out.println("");
     }
+
 }
