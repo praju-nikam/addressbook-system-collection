@@ -20,6 +20,10 @@ public class Contact
         this.phoneNumber = phoneNumber;
     }
 
+    public Contact() {
+
+    }
+
     //Used getters And setters to get and set contact details
 
 
