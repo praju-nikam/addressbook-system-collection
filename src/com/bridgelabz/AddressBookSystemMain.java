@@ -9,7 +9,7 @@ public class AddressBookSystemMain {
         Scanner scanner = new Scanner(System.in);
 
         AddressBookSystemDetails details = new AddressBookSystemDetails();
-
+        details.createAddressBook();
         int choice = 1;
         while (choice == 1){
             System.out.println("Choose One of the Given Choices as per Requirement: ");
@@ -26,7 +26,7 @@ public class AddressBookSystemMain {
                     details.deleteDetails();
                     break;
                 case 4:
-                    details.display();
+                    details.displayDetails();
                     break;
                 default:
                     choice = 0;
