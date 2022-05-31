@@ -33,7 +33,6 @@ public class AddressBookSystemMain {
             }
 
         }
-        System.out.println("");
     }
 
 }

@@ -110,6 +110,21 @@ public class AddressBookSystemDetails
         System.out.println(personDetails);
     }
 
+    //Method to check for duplicate entry before adding the person.
+
+    public void duplicateCheck(String firstName) {
+        for (int j = 0; j < personDetails.size(); j++) {
+            String contactName = personDetails.get(j).getFirstName();
+
+            if (firstName.equals(contactName)) {
+                System.out.println("This Person is Already Present");
+            } else {
+                System.out.println("You can Add this Person");
+                break;
+            }
+        }
+    }
+
     public void createAddressBook() {
         int option = 1;
         while (option == 1) {
